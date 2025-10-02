@@ -1,5 +1,13 @@
-import React from 'react';
-import type { Experience, Project, OpenSourceContribution, SkillCategory, EducationItem, Achievement, Certification } from './types';
+import React from "react";
+import type {
+  Experience,
+  Project,
+  OpenSourceContribution,
+  SkillCategory,
+  EducationItem,
+  Achievement,
+  Certification,
+} from "./types";
 import {
   PythonIcon,
   HtmlCssIcon,
@@ -18,7 +26,7 @@ import {
   VectorDbIcon,
   MicroservicesIcon,
   LangchainIcon,
-} from './components/icons';
+} from "./components/icons";
 
 export const EXPERIENCES: Experience[] = [
   {
@@ -27,13 +35,12 @@ export const EXPERIENCES: Experience[] = [
     period: "May 2023 - Present",
     type: "Professional",
     achievements: [
-      "Spearheaded front-end development for a **$180K** project, enabling seamless collaboration with backend teams and improving delivery speed by **20%**.",
-      "Architected and implemented **Mvvm** architecture in fe, improving scalability and reducing technical debt.",
+      "Architected and implemented **MVVM** architecture in fe, improving scalability and reducing technical debt.",
       "Engineered a **70% reduction in code review** cycle time via an open-source pr agent; contributed and merged a feature back to the open-source project.",
       "**Implemented** and optimized CI/CD pipelines on **Azure** and **Docker**, cutting deployment time by **65%**.",
-      "**Mentored** **10** interns on **Python**, contributed over **5+ Kbs** on Python, DevOps, and Azure cloud.",
-      "**Standardised** and documented the best practices (including video tutorials) for using **Azure cloud** and **CI/CD pipelines** for microservice deployment."
-    ]
+      "**Mentored** **10+** interns on **Python**, contributed over **5+ KSS** on Python, DevOps, and Azure cloud.",
+      "**Standardised** and documented the best practices (including video tutorials) for using **Azure cloud** and **CI/CD pipelines** for microservice deployment.",
+    ],
   },
   {
     company: "Soliton Technologies",
@@ -45,8 +52,8 @@ export const EXPERIENCES: Experience[] = [
       "Created a Python starter project setup using **Poetry**, cutting project setup time by **80%**.",
       "**Designed** & deployed an **AI-based** test sequence generator, accelerating semiconductor testing by **50%**.",
       "Developed an **AI Platform** where users can create AI Assistants with various configurations, significantly enhancing user self-service.",
-      "Deployed an **Azure cloud-based AI Chat Assistant** utilizing **RAG** principles, resolving queries within the Soliton."
-    ]
+      "Deployed an **Azure cloud-based AI Chat Assistant** utilizing **RAG** principles, resolving queries within the Soliton.",
+    ],
   },
   {
     company: "IEEE",
@@ -54,8 +61,9 @@ export const EXPERIENCES: Experience[] = [
     period: "4+ Years",
     type: "Volunteering",
     achievements: [
-      "Volunteering for the past 4 years, organising and taking sessions for college students."
-    ]
+      "Volunteering for the past 4 years, organising and taking sessions for college students.",
+      "Contributed to various IEEE events and workshops, fostering a culture of learning and innovation.",
+    ],
   },
   {
     company: "Spartans",
@@ -63,8 +71,8 @@ export const EXPERIENCES: Experience[] = [
     period: "Community Group",
     type: "Volunteering",
     achievements: [
-      "Volunteering in a community group focused on building healthier bodies and minds through sports, games, and meditation."
-    ]
+      "Volunteering in a community group focused on building healthier bodies and minds through sports, games, and meditation.",
+    ],
   },
 ];
 
@@ -72,81 +80,102 @@ export const PROJECTS: Project[] = [
   {
     name: "Home Lab Server",
     dates: "Aug 2023",
-    description: "Built a secure on-prem home lab server using Portainer to self-host services like Immich, protected by Cloudflare and backup redundancy.",
+    description:
+      "Built a secure on-prem home lab server using Portainer to self-host services like Immich, protected by Cloudflare and backup redundancy.",
     tech: [
       { name: "Docker", icon: <DockerIcon /> },
       { name: "Portainer", icon: <MicroservicesIcon /> },
       { name: "Cloudflare", icon: <AzureIcon /> },
     ],
-    image: "/assets/home-lab-server.png",
   },
   {
     name: "IEEE SJCE SB Website",
-    description: "Official website for the IEEE Student Branch at St. Joseph's College of Engineering.",
-    tech: [{ name: "WordPress", icon: <WordPressIcon /> }, { name: "HTML & CSS", icon: <HtmlCssIcon /> }],
-    url: "https://ieeesjcesbc.org/",
-    image: "/assets/ieee-sjce-sb-website.png",
+    description:
+      "Official website for the IEEE Student Branch at St. Joseph's College of Engineering.",
+    tech: [
+      { name: "WordPress", icon: <WordPressIcon /> },
+      { name: "HTML & CSS", icon: <HtmlCssIcon /> },
+    ],
+    image: "components/assets/ieeesjcesbC.png",
   },
   {
     name: "IEEE SJCE IAS SBC Website",
-    description: "Website for the IEEE Industry Applications Society Student Branch Chapter.",
-    tech: [{ name: "WordPress", icon: <WordPressIcon /> }, { name: "HTML & CSS", icon: <HtmlCssIcon /> }],
-    url: "http://ias.ieeesjcesbc.org/",
+    description:
+      "Website for the IEEE Industry Applications Society Student Branch Chapter.",
+    tech: [
+      { name: "WordPress", icon: <WordPressIcon /> },
+      { name: "HTML & CSS", icon: <HtmlCssIcon /> },
+    ],
+    image: "components/assets/ieee-ias.png",
   },
   {
     name: "Dept. of EEE Website",
-    description: "Official website for the Department of Electrical and Electronics Engineering.",
-    tech: [{ name: "HTML & CSS", icon: <HtmlCssIcon /> }, { name: "JavaScript", icon: <JavaScriptIcon /> }],
-    url: "https://stjosephs.ac.in/departmentsite/eee/indexnew.html",
+    description:
+      "Official website for the Department of Electrical and Electronics Engineering.",
+    tech: [
+      { name: "HTML & CSS", icon: <HtmlCssIcon /> },
+      { name: "JavaScript", icon: <JavaScriptIcon /> },
+    ],
+    image: "components/assets/eee.png",
   },
   {
     name: "Jet Potential 2k22 Website",
     description: "Event website for a technical symposium.",
-    tech: [{ name: "HTML & CSS", icon: <HtmlCssIcon /> }, { name: "JavaScript", icon: <JavaScriptIcon /> }],
-    url: "https://jetpotential2k22.ieeesjcesbc.org/",
+    tech: [
+      { name: "HTML & CSS", icon: <HtmlCssIcon /> },
+      { name: "JavaScript", icon: <JavaScriptIcon /> },
+    ],
+    image: "components/assets/jet2k22.png",
   },
   {
     name: "ICMTRA23 Conference Website",
-    description: "International conference website for multidisciplinary research and applications.",
+    description:
+      "International conference website for multidisciplinary research and applications.",
     tech: [{ name: "WordPress", icon: <WordPressIcon /> }],
-    url: "https://icmtra23.ieeesjcesbc.org/",
+    image: "components/assets/icmtra.png",
   },
   {
     name: "Womensera Event Website",
     description: "A special event website focused on women in engineering.",
     tech: [{ name: "HTML & CSS", icon: <HtmlCssIcon /> }],
-    url: "https://ieeesjcesbc.org/womansera",
+    image: "components/assets/womensera.png",
   },
   {
     name: "Energy Meter Web App",
-    description: "A web application for monitoring and managing energy consumption.",
-    tech: [{ name: "React", icon: <ReactIcon /> }, { name: "Firebase", icon: <AzureIcon /> }],
+    description:
+      "A web application for monitoring and managing energy consumption.",
+    tech: [
+      { name: "Angular", icon: <AngularIcon /> },
+      { name: "Firebase", icon: <AzureIcon /> },
+    ],
     url: "https://energymeterpro.web.app/",
-    image: "/assets/energy-meter-webapp.png",
+    image: "components/assets/energymeter.png",
   },
   {
     name: "Conocithon Event Website",
     description: "Website for a hackathon event.",
     tech: [{ name: "HTML & CSS", icon: <HtmlCssIcon /> }],
-    url: "https://ieeesjcesbc.org/conocithon",
+    image: "components/assets/conocithon.png",
   },
   {
     name: "IEEE India Council SCT Website",
-    description: "Website for the IEEE India Council Student Coordination Team.",
+    description:
+      "Website for the IEEE India Council Student Coordination Team.",
     tech: [{ name: "WordPress", icon: <WordPressIcon /> }],
-    url: "https://r10.ieee.org/ic-sct/",
+    image: "components/assets/ic-sct.jpeg",
   },
 ];
 
 export const OPEN_SOURCE_CONTRIBUTIONS: OpenSourceContribution[] = [
   {
     projectName: "PR-Agent by CodiumAI",
-    description: "Contributed a feature to enable custom pull request labels based on content analysis, which was successfully merged. This enhancement helps streamline the code review process by providing better visual cues and categorization for PRs.",
+    description:
+      "The PR introduces improvements to the Azure DevOps integration, focused on better ticket context handling and comment thread management",
     url: "https://github.com/Codium-ai/pr-agent",
     tech: [
       { name: "Python", icon: <PythonIcon /> },
-      { name: "GitHub Actions", icon: <GitHubActionsIcon /> }
-    ]
+      { name: "GitHub Actions", icon: <GitHubActionsIcon /> },
+    ],
   },
 ];
 
@@ -157,8 +186,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Python", icon: <PythonIcon /> },
       { name: "JavaScript", icon: <JavaScriptIcon /> },
       { name: "TypeScript", icon: <TypeScriptIcon /> },
-      { name: "HTML & CSS", icon: <HtmlCssIcon /> }
-    ]
+      { name: "HTML & CSS", icon: <HtmlCssIcon /> },
+    ],
   },
   {
     title: "Frameworks & Libraries",
@@ -172,7 +201,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Langchain", icon: <LangchainIcon /> },
       { name: "Microservices", icon: <MicroservicesIcon /> },
       { name: "WordPress", icon: <WordPressIcon /> },
-    ]
+    ],
   },
   {
     title: "Cloud & DevOps",
@@ -182,14 +211,14 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Docker", icon: <DockerIcon /> },
       { name: "Git", icon: <GitIcon /> },
       { name: "GitHub Actions", icon: <GitHubActionsIcon /> },
-    ]
+    ],
   },
   {
     title: "Databases",
     skills: [
       { name: "PostgreSQL", icon: <PostgreSqlIcon /> },
-      { name: "Qdrant & Weaviate", icon: <VectorDbIcon /> }
-    ]
+      { name: "Qdrant & Weaviate", icon: <VectorDbIcon /> },
+    ],
   },
 ];
 
@@ -202,8 +231,8 @@ export const EDUCATION: EducationItem[] = [
     notes: [
       "Specialized in **Electrical and Electronics Engineering**",
       "Awarded with the **Best Outgoing Student** of the Year",
-      "Project and Paper published on \"**Smart Energy Management and Load Monitoring of Individual Loads**\""
-    ]
+      'Project and Paper published on "**Smart Energy Management and Load Monitoring of Individual Loads**"',
+    ],
   },
   {
     degree: "Higher Secondary School",
@@ -211,32 +240,36 @@ export const EDUCATION: EducationItem[] = [
     dates: "2018 - 2019",
     notes: [
       "Completed with a **80%** score in the State Board",
-      "State level Athlete in 400m Hurdles event"
-    ]
-  }
+      "State level Athlete in 400m Hurdles event",
+    ],
+  },
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
   {
     name: "Innovator of the Year/2024",
     dates: "May 2024",
-    description: "Awarded to the team for bringing innovative AI Platform for creating AI Assistants."
+    description:
+      "Awarded to the team for bringing innovative AI Platform for creating AI Assistants.",
   },
   {
     name: "Star Team Award",
     dates: "Dec 2024",
-    description: "Awarded for being a great team to deliver high-impact customer solution under tight deadlines."
+    description:
+      "Awarded for being a great team to deliver high-impact customer solution under tight deadlines.",
   },
   {
     name: "Best Outgoing Student of the Year",
     dates: "2023",
-    description: "Awarded by St. Joseph's College of Engineering for exceptional academic performance and leadership."
+    description:
+      "Awarded by St. Joseph's College of Engineering for exceptional academic performance and leadership.",
   },
   {
     name: "Richard E. Mervin Scholar",
     dates: "2022",
-    description: "Awarded by the IEEE Computer Society for outstanding contributions to the field of Computer Science."
-  }
+    description:
+      "Awarded by the IEEE Computer Society for outstanding contributions to the field of Computer Science.",
+  },
 ];
 
 export const CERTIFICATIONS: Certification[] = [
@@ -257,9 +290,9 @@ export const CERTIFICATIONS: Certification[] = [
     skills: [
       "Cloud concepts",
       "Azure architecture and services",
-      "Azure management and governance"
+      "Azure management and governance",
     ],
-  }
+  },
 ];
 
 export const GITHUB_URL = "https://github.com/abishlalns";
