@@ -78,6 +78,20 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    name: "KAIRA - AI Voice Assistant",
+    dates: "Jan 2024 - Present",
+    description:
+      "Modern AI-powered assistant platform with Next.js frontend and Python backend, leveraging LiveKit for real-time chat and transcription capabilities with extensible architecture.",
+    tech: [
+      { name: "Python", icon: <PythonIcon /> },
+      { name: "TypeScript", icon: <TypeScriptIcon /> },
+      { name: "Langchain", icon: <LangchainIcon /> },
+      { name: "Docker", icon: <DockerIcon /> },
+      { name: "LiveKit", icon: <MicroservicesIcon /> },
+    ],
+    url: "https://github.com/abishlal/kaira",
+  },
+  {
     name: "Home Lab Server",
     dates: "Aug 2023",
     description:
